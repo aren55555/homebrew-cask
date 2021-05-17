@@ -16,6 +16,6 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
       - name: Rebase Pull Request
-        uses: cirrus-actions/rebase@b91cdc98c0c0d3c4673647a74a68731bf3c29276
+        uses: cirrus-actions/rebase@c473b716e3fcde0c6bf67416e2c2882830ad40f6
         env:
           GITHUB_TOKEN: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
