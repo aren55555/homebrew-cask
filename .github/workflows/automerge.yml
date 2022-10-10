@@ -30,7 +30,7 @@ jobs:
     if: startsWith(github.repository, 'Homebrew/') && (github.event.review.state == 'approved' || !github.event.review)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@main
+      - uses: actions/checkout@v3.1.0
       - uses: ./.github/actions/automerge
         with:
           token: ${{ secrets.HOMEBREW_GITHUB_API_TOKEN }}
